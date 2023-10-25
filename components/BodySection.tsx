@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faChartLine } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const BodySection = () => {
   return (
@@ -9,20 +10,20 @@ const BodySection = () => {
           Unlock the power of financial insights with Valyx.
         </p>
         <div className="space-y-6">
-          <a
+          <Link
             href="/search"
             className="bg-blue-500 hover:bg-blue-600 text-white py-4 px-8 rounded-full shadow-md text-lg transition duration-300 inline-block"
           >
             <FontAwesomeIcon icon={faSearch} className="mr-2" />
             Get Started with Search
-          </a>
-          <a
+          </Link>
+          <Link
             href="/trend"
             className="bg-blue-500 hover:bg-blue-600 text-white py-4 px-8 rounded-full shadow-md text-lg transition duration-300 inline-block"
           >
             <FontAwesomeIcon icon={faChartLine} className="mr-2" />
             Explore Trend Analysis
-          </a>
+          </Link>
         </div>
       </div>
     </div>
